@@ -1,3 +1,263 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	margin: 0 auto;
+	width: 900px;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 5%;
+        width: 90%;
+    }
+}
+
+a {
+	text-decoration: none;
+	color: darkgrey;
+	font-size: 16px;
+}
+
+nav {
+	padding: 40px 0 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 800px) {
+    nav {
+        margin: 5%;
+        width: 90%;
+    }
+}
+
+.logo {
+	width: 100%;
+	flex-shrink: 0;
+}
+
+header {
+	text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    header {
+
+    }
+}
+
+@media (max-width: 800px) {
+    .codesnippetimg {
+        display: none;
+    }
+}
+
+h1 {
+	font-size: 75px;
+    margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        margin: 5%;
+        justify-content: center;
+    }
+}
+
+.getstarted {
+	background-color: white;
+	font-size: 18px;
+	padding: 3px 45px;
+	text-decoration: none;
+	border: 1px solid black;
+	margin: 0 auto;
+	font-family: 'Titillium Web';
+	align-self: flex-end;
+}
+
+hr {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 60px 0 20px 0;
+	border: none;
+}
+
+.featuresabout {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 17px;
+	display: block;
+	margin: 25px 0 15px 0;
+}
+
+@media (max-width 800px) {
+    .middle-img {
+        max-width: 800px;
+        height: auto;
+    }
+}
+
+.serprovis {
+	display: flex;
+	justify-content: space-around;
+}
+
+.serprovischild {
+	width: 280px;
+}
+
+p {
+	line-height: 1.2;
+}
+
+footer {
+	text-align: center;
+	height: 100px;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.hr2 {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 95%;
+	margin: 40px 0 0 0;
+	border: none;
+}
+
+address {
+	line-height: 1.2;
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.servchild {
+	width: 425px;
+	padding: 0 20px 20px 20px;
+	margin: 20px 0;
+	background-color: #F5F5F5;
+	border: 1px solid black;
+}
+
+.servicesh1 {
+	font-size: 28px;
+	margin-top: 25px;
+}
+
+.learnmore {
+	font-size: 11px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 40px;
+	margin-top: 15px;
+}
+
+.facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+.fullwidthhr {
+	color: black;
+	background-color: black;
+	height: 1px;
+	width: 100%;
+	margin: 20px 0 20px 0;
+	border: none;
+}
+
+.factslist {
+	width: 400px;
+}
+
+ol {
+	line-height: 1.8;
+	list-style-type: square;
+	padding: 0 0 0 18px;
+}
+
+.extrapadding {
+	padding: 40px;
+	margin: 20px;
+}
